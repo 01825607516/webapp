@@ -36,7 +36,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const checkBackendConnection = async () => {
       try {
-        await fetch("http://localhost:5000/api/test"); // backend health endpoint
+        await fetch("https://webapp-el84.onrender.com/api/test"); // backend health endpoint
         setBackendStatus('online');
         console.log('✅ Backend connection successful');
       } catch (error) {
